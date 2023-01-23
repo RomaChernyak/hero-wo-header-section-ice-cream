@@ -41,9 +41,9 @@ body {
 
 /* Mobile 320px-width version */
 
-/* .hero-section {
+.hero-section {
     outline: 1px white solid;
-} */
+}
 
 .hero-section .container {
     position: relative;
@@ -157,6 +157,8 @@ body {
     display: block;
     width: 320px;
     height: 49.11px;
+
+    animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-ice-cream {
@@ -170,6 +172,8 @@ body {
     display: block;
     width: 177px;
     height: 217px;
+
+    animation: shift-one 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-lot-cream {
@@ -201,6 +205,8 @@ body {
 
         width: 218px;
         height: 267px;
+
+        animation: shift-two 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -239,6 +245,8 @@ body {
         width: 139px;
         margin-left: 184px;
         margin-bottom: 12px;
+
+        animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-arrow {
@@ -250,6 +258,8 @@ body {
         fill: rgba(252, 252, 252, 1);
 
         margin-left: 184px;
+
+        animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-network-statistics {
@@ -305,6 +315,8 @@ body {
 
         width: 268px;
         height: 329px;
+
+        animation: shift-three 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-lot-cream {
@@ -318,6 +330,8 @@ body {
         display: block;
         width: 152px;
         height: 152px;
+
+        animation: rotate 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -420,6 +434,8 @@ body {
 
         width: 456px;
         height: 560px;
+
+        animation: shift-four 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-lot-cream {
@@ -594,5 +610,75 @@ screen and (min-resolution: 3dppx) {
             width: 225px;
             height: 225px;
         }
+    }
+}
+
+@keyframes shift-one {
+    0% {
+        right: 120px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes shift-two {
+    0% {
+        right: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes shift-three {
+    0% {
+        right: 250px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 92px;
+        opacity: 1;
+    }
+}
+
+@keyframes shift-four {
+    0% {
+        right: 500px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 92px;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
